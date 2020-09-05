@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content_main %}
+<h1 style="color:pink">Title - {{ object.title }}</h1>
+<p style="background-color: #333; color:pink; font-size:0.5cm">{{ object.content }}</p>
+<input type='submit' onclick="window.location='{{ object.get_absolute_url_delete }}'" value="Delete this article" style="background-color: #333; color: pink;" href=""/>
+<input type='button' onclick="window.location='../'" value="Back" style="background-color: #333; color: pink;" />
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content_main %}
+<input type="button" value='Create New' onclick="window.location='create'" style="background-color: #333; color:pink" />
+<ol style="color:pink">
+{% for instance in article_list %}
+    <li style="color: pink;"><label style="color: pink;" onclick="window.location='{{ instance.get_absolute_url }}'">{{ instance.title }}</lable></li>
+{% endfor %}
+</ol>
+    
+{% endblock %}
