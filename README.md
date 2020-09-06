@@ -6,7 +6,7 @@ This is a blog web application implemented with Django, html and SQLite. It can 
 
 2) Run ``python manage.py runserver`` in command line.
 
-A web page should be poping out in the browser.
+A web page should be popping out in the browser.
 
 ## Screenshots
 #### Article list
